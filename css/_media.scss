@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+  html {
+    transform: scale(0.8, 0.75) translate(0, 0);
+    transform-origin: left top;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}

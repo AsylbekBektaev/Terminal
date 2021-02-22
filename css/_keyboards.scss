@@ -1,0 +1,185 @@
+#keyboards {
+  background: #414042;
+  height: 864px;
+  left: 0;
+  position: absolute;
+  top: 160px;
+  width: 100%;
+  z-index: 100;
+
+  &.footerHide {
+    height: 760px;
+
+    ul.footer {
+      display: none;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    //display: none;
+  }
+
+  .inputs {
+    padding-top: 10px;
+
+    .info.top {
+      margin-top: 0;
+    }
+  }
+
+  .list {
+    position: relative;
+  }
+
+  .digital {
+    margin: 45px auto 0;
+    text-align: center;
+    width: 550px;
+  }
+
+  .keyboard {
+    padding: 0 40px;
+
+    &.top {
+      margin-top: 20px;
+    }
+  }
+
+  .key:active {
+    opacity: .5;
+  }
+
+  .clearText,
+  .backSpace,
+  .space,
+  .shift,
+  .enter,
+  .language {
+    &::after {
+      font: 900 70px/100px FA, serif;
+      vertical-align: top;
+    }
+  }
+
+  .clearText {
+    background: #E16978;
+
+    color: $colorWhite;
+
+    &::after {
+      content: '\f00d';
+    }
+  }
+
+  .backSpace {
+    background: #BEBEBE;
+
+
+    &::after {
+      content: '\f060';
+    }
+  }
+
+  .language {
+    &::after {
+      content: '\f1ab';
+    }
+  }
+
+  .space {
+
+  }
+
+  .shift {
+    &.active {
+      background: $colorService;
+      color: $colorYellow;
+    }
+
+    &::after {
+      content: '\f35b';
+    }
+  }
+
+  .enter {
+    &::after {
+      content: '\f358';
+    }
+  }
+
+  .footer {
+    bottom: 0;
+    box-sizing: border-box;
+    left: 0;
+    padding: 10px 40px 40px;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+$widthDigital: 150px;
+$widthKeyboard: 100px;
+
+ul.digital {
+  li {
+    background: $colorWhite;
+    border-radius: 5px;
+    display: inline-block;
+    font: 900 50px/100px RR, serif;
+    margin: 10px;
+    text-align: center;
+    width: $widthDigital;
+  }
+}
+
+.footer {
+  li {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .back {
+    background: $colorMainBack !important;
+  }
+
+  .next {
+    background: $colorNext;
+    color: $colorWhite;
+  }
+}
+
+ul.keyboard {
+  &.upperCase {
+    text-transform: uppercase;
+  }
+
+  li {
+    background: $colorWhite;
+    border-radius: 5px;
+    border: 2px solid $colorService;
+    box-sizing: border-box;
+    display: inline-block;
+    font: 900 50px/100px RR, serif;
+    text-align: center;
+    width: $widthKeyboard;
+
+    &.size05 {
+      width: $widthKeyboard * .5;
+    }
+
+    &.size2 {
+      width: $widthKeyboard * 2;
+    }
+
+    &.size15 {
+      width: $widthKeyboard * 1.5;
+    }
+
+    &.space {
+      width: $widthKeyboard * 5;
+    }
+  }
+}

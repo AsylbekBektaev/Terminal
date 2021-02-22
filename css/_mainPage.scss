@@ -1,0 +1,45 @@
+.bottomButtons {
+  position: relative;
+}
+
+#searchButton,
+#infoPage {
+  background: #fff;
+  border-radius: 0;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+
+  .searchIcon,
+  .infoIcon {
+    display: inline-block;
+    padding: 19px;
+    text-decoration: none;
+    width:118px;
+
+    &::after {
+      font: 400 50px/50px FA, serif;
+    }
+  }
+
+}
+
+#searchButton {
+  right: 80px;
+  top: 20px;
+
+  .searchIcon::after {
+    content: '\f002';
+  }
+}
+
+#infoPage {
+  left: 80px;
+  top: 20px;
+
+  .infoIcon::after {
+    //content: '\f129';
+    content: '\f05a';
+  }
+}

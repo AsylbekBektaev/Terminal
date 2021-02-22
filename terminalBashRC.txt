@@ -1,0 +1,3 @@
+if [ -f ~/terminal.sh ]; then
+	./terminal.sh &
+fi

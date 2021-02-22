@@ -1,0 +1,53 @@
+#loadingPage {
+  background: rgba(255, 255, 255, .9);
+  color: $colorBlack;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .dots {
+    margin: 100px 0 50px;
+
+    li {
+      animation: animation 1s linear 0s infinite forwards;
+      background: $colorWhite;
+      border-radius: 50%;
+      border: 10px solid $colorBlack;
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .title {
+    font: 900 80px/80px RR, serif;
+  }
+
+  .image {
+    margin-top: 300px;
+    width: 300px;
+  }
+}
+
+@keyframes animation {
+  0%, 50% {
+    background: $colorWhite;
+  }
+
+  51%, 100% {
+    background: #f00;
+  }
+}

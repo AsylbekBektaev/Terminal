@@ -1,0 +1,503 @@
+.class_1 {
+  padding-top: 20px;
+  display: flex;
+}
+.class_2 {
+  width: 256px;
+  height: 632px;
+  margin-left: 5%;
+}
+.class_2_2 {
+  width: 256px;
+  height: 632px;
+  margin-left: 1.5%;
+}
+.class_2_4{
+  width: 256px;
+  height:832px;
+  margin-left:1.5%;
+  .termial_text_block{
+    font-size:26px;
+    border-bottom:solid grey 1px;
+  }
+  .model_info_KUP_block{
+    width:100%;
+    height:85px;
+    margin:5px 0 0 0;
+    .model_info_kup_text{
+      font-size:18px;
+    }
+    .block_kup{
+      width:100%;
+      height:85px;
+      background: #C4C4C4;
+      margin:5px 0 0 0;
+      position: relative;
+      .block_kup_2{
+        width: 100%;
+        height:60%;
+        display:flex;
+        border-bottom:solid 1px grey;
+        .block_kup_name{
+          margin:0;
+          font-size: 16px;
+          width: 100%;
+        height:100%;
+        position: absolute;
+        left:3px;
+        top:10px;
+        text-align: center;
+        margin:0 0 0 0;
+        font-size: 18px;
+      }
+        .statusColor{
+          width:13px;
+          height:13px;
+          position: absolute;
+          top:20px;
+          right:44px;
+          border:solid 1px green;
+          border-radius:50%;
+          background-color: green;
+        }
+      img{
+        width:25px;
+        height:25px;
+        position: absolute;
+        top:15px;
+        right:15px;
+      }
+      }
+
+      .block_kup_number{
+        width:100%;
+          height:45%;
+          margin:0;
+          font-size: 16px;
+          text-align:center;
+      }
+    }
+  }
+  .model_info_print_block{
+    width:100%;
+    height:85px;
+    margin:53px 0 0 0;
+    font-size:18px;
+    .block_print{
+      width:100%;
+      height: 84px;
+      background: #C4C4C4;
+      display:flex;
+      text-align: center;
+      position: relative;
+      margin:10px 0 0 0;
+      .block_text{
+        width: 100%;
+        height:100%;
+        text-align: center;
+        margin:23px 0 0 0;
+        font-size: 18px;
+      }
+      @each $class in 'statusColor2','statusColor3'{
+      .#{$class} {
+        width:13px;
+        height:13px;
+        position: absolute;
+        top:32px;
+        right:45px;
+        border:solid 1px green;
+        border-radius:50%;
+        background-color: green;
+      }
+      }
+      img{
+      position: absolute;
+      right:18px;
+      top:18px;
+      width:25px;
+      height:25px;
+        margin:10px 0 0 10px;
+      }
+    }
+
+  }
+  .button_seting{
+    width:100%;
+    height:84px;
+    background-color:#2E2E69;
+    border-radius:5px;
+    border:solid 1px #2E2E69;
+    margin:73px 0 0 0;
+    color:white;
+  }
+}
+.class_2_3 {
+  width:256px;
+  height:758px;
+  margin:71px 0 0 1.5%;
+  padding: 0 20px 0 30px;
+  position: relative;
+
+  .button_rebooting{
+    background-color:#2e2e69;
+    border:solid 1px #2e2e69;
+    border-radius:5px;
+    color:white;
+    width:100%;
+    height:84px;
+    position: absolute;
+    left:0;
+  }
+  .driver_rebooting{
+    background-color:#2e2e69;
+    border:solid 1px #2e2e69;
+    border-radius:5px;
+    color:white;
+    width:100%;
+    height:84px;
+    position: absolute;
+    left:0;
+  }
+  .driver_off{
+    background-color:#2e2e69;
+    border:solid 1px #2e2e69;
+    border-radius:5px;
+    color:white;
+    width:100%;
+    height:84px;
+    position: absolute;
+    left:0;
+  }
+  .driver_on{
+    background-color:#2e2e69;
+    border:solid 1px #2e2e69;
+    border-radius:5px;
+    color:white;
+    width:100%;
+    height:84px;
+    position: absolute;
+    left:0;
+  }
+  .reboot_computer{
+    background-color:#2e2e69;
+    border:solid 1px #2e2e69;
+    border-radius:5px;
+    color:white;
+    width:100%;
+    height:84px;
+    position: absolute;
+    left:0;
+  }
+  .ter_log_delete{
+    background-color:#2e2e69;
+    border:solid 1px #2e2e69;
+    border-radius:5px;
+    color:white;
+    width:100%;
+    height:84px;
+    position: absolute;
+    left:0;
+  }
+  .button_exit {
+    width: 100%;
+    height: 84px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    border: solid 1px #0070C2;
+    border-radius: 5px;
+    background-color: #0070C2;
+    color: white;
+  }
+}
+.infoPage {
+  h1 {
+    font-size: 45px;
+    margin: 0 0 250px 0;
+  }
+}
+@each $class_text in ('block_collection_buttons'),
+        ('block_collection_buttons2'),
+        ('block_collection_buttons3'),
+        ('block_collection_buttons4'),
+        ('block_collection_buttons5'),
+        ('block_collection_buttons6'),
+        ('block_collection_buttons7'),
+        ('block_collection_buttons8'),
+        ('block_collection_buttons9'),
+        ('block_collection_buttons10'){
+  .#{$class_text}{
+    width: 100%;
+    height:89.3%;
+    position: absolute;
+    background-color: white;
+    @if($class_text == 'block_collection_buttons10'){
+      display: block;
+      top:160px;
+      height:84.3%;
+    }@else{
+      height:89.3%;
+      display: none;
+      top:110px;
+
+    }
+    @if($class_text == 'block_collection_buttons5'){
+     #counter_seconds{
+       position: absolute;
+       top: 35%;
+       left: 46.5%;
+       font-size:96px;
+       line-height: 12.5px;
+       font-weight: 400;
+       color:red;
+     }
+
+    }@else {
+
+      img {
+        position: absolute;
+        top: 27%;
+        left: 43%;
+      }
+    }
+    h1{
+      position: absolute;
+      top:55%;
+      @if(#{$class_text} == 'block_collection_buttons'){
+      //left:33%;
+        text-align: center;
+        width:100%;
+      }
+      @if(#{$class_text} == 'block_collection_buttons2'){
+        //left:28%;
+        text-align: center;
+        width:100%;
+      }
+      @if(#{$class_text} == 'block_collection_buttons3'){
+        //left:26.5%;
+        text-align: center;
+        width:100%;
+      }
+      @if(#{$class_text} == 'block_collection_buttons4'){
+        //left:26.5%;
+        text-align: center;
+        width:100%;
+        &::after{
+          content:'?';
+        }
+      }
+      @if(#{$class_text} == 'block_collection_buttons5'){
+        //left:40%;
+        text-align: center;
+        width:100%;
+        &::after{
+          content:'?';
+        }
+      }
+      @if(#{$class_text} == 'block_collection_buttons6'){
+        //left:26.5%;
+        text-align: center;
+        width:100%;
+        &::after{
+          content:'?';
+        }
+
+      }
+      @if(#{$class_text} == 'block_collection_buttons7'){
+        //left:26.5%;
+        text-align: center;
+        width:100%;
+        &::after{
+          content:'?';
+        }
+      }
+      @if(#{$class_text} == 'block_collection_buttons8'){
+        //left:26.5%;
+        text-align: center;
+        width:100%;
+        &::after{
+          content:'?';
+        }
+      }
+      @if(#{$class_text} == 'block_collection_buttons9'){
+        //left:32%;
+        text-align: center;
+        width:100%;
+        &::after{
+          content:'?';
+        }
+      }
+      @if(#{$class_text} == 'block_collection_buttons10'){
+        text-align: center;
+        width:100%;
+      }
+
+
+
+      font-size:64px;
+      line-height: 75px;
+      font-weight:400;
+    }
+    .block_button_yes_and_no{
+      width:100%;
+      height:183px;
+      position: absolute;
+      bottom:0;
+      background: #EDEDED;
+      display: flex;
+      border-top:solid 5px  #969696;
+      box-shadow : inset 0 4px 4px #969696;
+      @each $class_no , $class_yes in ('block_button_no','block_button_yes'),
+                ('block_button_no2','block_button_yes2'),
+                ('block_button_no3','block_button_yes3'),
+                ('block_button_no4','block_button_yes4'),
+              ('block_button_no5','block_button_yes5'),
+              ('block_button_no6','block_button_yes6'),
+              ('block_button_no7','block_button_yes7'),
+              ('block_button_no8','block_button_yes8'),
+              ('block_button_no9','block_button_yes9'),
+              ('block_button_no10','block_button_yes10'){
+        .#{$class_no}{
+          width: 270px;
+          height:83.89px;
+          border:solid 1px #2E2E69;
+          background:#2E2E69;
+          border-radius:5px;
+          color:white;
+          font-size: 24px;
+          line-height:28.13px;
+          font-weight:400;
+          margin: 48.1px 34px 0 350px;
+          text-align: center;
+          text-decoration: none;
+          @if($class_no == 'block_button_no10'){
+            height:83.89px - 27px;
+            padding-top:27px;
+          }
+
+        }
+        .#{$class_yes}{
+          width: 270px;
+          height:83.89px;
+          border:solid 1px #7CAE00;
+          background: #7CAE00;
+          border-radius:5px;
+          color:white;
+          font-size: 24px;
+          line-height:28.13px;
+          font-weight:400;
+          margin: 48.1px 0 0 34px;
+          text-align: center;
+          text-decoration: none;
+          @if($class_yes == 'block_button_yes10'){
+            height:83.89px - 27px;
+            padding-top:27px;
+          }
+        }
+      }
+
+  }
+
+  }
+}
+
+.class_3 {
+  width:245px;
+  margin:0 0 0 8px;
+  border-bottom: solid grey 2px;
+  font-weight: 600;
+  font-size: 26px;
+}
+.class_4 {
+  display: flex;
+}
+.class_5 {
+  width: 50%;
+  flex-direction: column;
+}
+.class_6 {
+  background: #C4C4C4;
+  margin: 10px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  width:117px;
+  height: 500px;
+  li {
+    font-size: 18px;
+    padding-top: 45px;
+  }
+}
+.class_6_2 {
+  background: #C4C4C4;
+  margin: 10px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  width:117px;
+  height: 500px;
+  li {
+    font-size: 18px;
+    padding-top: 39px;
+  }
+}
+.class_7 {
+  font-size: 19px;
+  margin: 5px 0 5px 8px ;
+}
+.class_8 {
+  width: 245px;
+  border: solid grey 1px;
+  height: 114px;
+  margin: 10px 0 10px 8px;
+}
+.class_9 {
+  width: 245px;
+  border: solid 3px grey;
+  margin: 40px 0 10px 8px;
+  height: 58px;
+  display: flex;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.class_10 {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+.class_11 {
+  position: absolute;
+  right: 20px;
+}
+.class_14 {
+  font-size: 22px;
+  position: relative;
+  width: 100%;
+}
+.class_15 {
+  font-size: 22px;
+  position: relative;
+  width: 100%;
+}
+.class_16 {
+  width: 245px;
+  height: 84px;
+  color: white;
+  border: solid 1px #2e2e69;
+  border-radius: 5px;
+  margin: 38px 0 10px 8px;
+  background-color: #2e2e69;
+}
+.class_17 {
+	position: absolute;
+	left: 10px;
+	&::after {
+		content: ':';
+		width: 15px;
+		height: 15px;
+		margin: 0 0 0 2px;
+	}
+}
+

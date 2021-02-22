@@ -1,0 +1,131 @@
+#messageBox {
+  align-items: center;
+  background: rgba(0, 0, 0, .8);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 900;
+
+  div {
+    background: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    min-height: 100px;
+    padding: 0;
+    width: 1041px;
+    height: 666px;
+    margin:100px 0 0 0;
+    position: relative;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    //vertical-align: top;
+
+    &:first-child {
+      width: 150px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 30px;
+      width: 670px;
+    }
+  }
+
+  &.show {
+    display: flex !important;
+  }
+
+  .message {
+    color: $colorBlack;
+    width:155%;
+    text-align: center;
+    font: 400 64px/75px RR, serif;
+    margin: 50px 0 0 0;
+  }
+  .block_2MessageBox{
+    width:100%;
+    height:148px;
+    background: #EDEDED;
+    position: absolute;
+    bottom:0;
+    left:0;
+    border-top:solid 1px #969696;
+    box-shadow : inset 0 4px 4px #969696;
+    .button {
+      $height: 60px;
+      background: $colorBack;
+      border-radius: 5px;
+      border: 0;
+      color: $colorWhite;
+      display: inline-block;
+      font: 400 24px/30px RR, serif;
+      height: 56px;
+      width:189px;
+      min-width: 150px;
+      padding: 0px 35px;
+      margin:30px 0 0 0;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      &.cancel {
+        background: $colorGreyWhite;
+        color: $colorBlack;
+      }
+    }
+  }
+
+  .image {
+    display: inline-block;
+    height: 156px;
+    width: 156px;
+    margin:70px 0 0 289%;
+    $offset: 200px;
+
+    &.error,
+    &.info,
+    &.question,
+    &.warning {
+      &::after {
+        font: 400 156px/156px FA, serif;
+      }
+    }
+
+    &.info::after {
+      color: #17f;
+      content: '\f05a';
+    }
+
+    &.error::after {
+      color: #d00;
+      content: '\f188';
+    }
+
+    &.question::after {
+      color: $colorNext;
+      content: '\f059';
+    }
+
+    &.warning::after {
+      color: #f70;
+      content: '\f071';
+    }
+  }
+}

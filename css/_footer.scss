@@ -1,0 +1,30 @@
+footer {
+  bottom: 0;
+  box-sizing: border-box;
+  max-width: $mainWidth;
+  position: absolute;
+  width: 100%;
+  background: #D3D3D3;
+
+  &.category {
+    background: white;
+    padding: 10px 0 40px 0;
+  }
+
+  &.service {
+    background:#414042;
+    padding: 10px 40px 40px;
+    height:110px;
+  }
+
+  &.check {
+    background:#414042;
+    padding: 10px 0 40px 0;
+    text-align: center;
+  }
+}
+
+.version {
+  font: 12px/20px RR, serif;
+  padding: 0 5px;
+}

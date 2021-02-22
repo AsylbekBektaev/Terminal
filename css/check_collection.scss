@@ -1,0 +1,326 @@
+
+.section_check_collection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10% 0 0 0;
+  //position: relative;
+  .info_text{
+    position:absolute;
+    top:6.5%;
+    left: 37%;
+    font-size:48px;
+  }
+  .block_info{
+    position: absolute;
+    top:10%;
+    left:37%;
+    display: flex;
+    flex-direction: column;
+    .count_text{
+      margin:52px 0 0 0;
+      font-size: 30px;
+      color:red;
+    }
+    .count_info{
+      color:red;
+      margin:5px 0 0 47%;
+      font-size:45px;
+    }
+  }
+  .check_block_1 {
+    width: 160px;
+    height: 436px;
+    margin-left: 20%;
+    .text_check_block_1 {
+      font-size: 20px;
+    }
+
+    .conteiner_check_block_1 {
+      display: flex;
+      width: 100%;
+      height: 480px;
+      margin: 0 0 -60px 0;
+      padding: 0;
+      @each $class_text, $margin_px in (conteiner_1_check_1, 4px), (container_2_check_1, 4px) {
+        .#{$class_text} {
+          width: 50%;
+          height: 403px;
+          margin: 0;
+          padding: 0;
+
+          ul {
+            @if $class_text ==  conteiner_1_check_1 {
+              margin: 0 #{$margin_px} 0 0;
+            } @else if $class_text == container_2_check_1 {
+              margin: 0 0 0 #{$margin_px};
+            }
+            padding: 0;
+            width: 100%;
+            height: 403px;
+            background: #C4C4C4;
+
+            li {
+              padding: 33px 0 0 0;
+              text-align: center;
+              list-style: none;
+              width: 100%;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .total_block_coins_1 {
+      margin: 0;
+      border: solid 1px $colorGrey;
+      font-size: 16px;
+      width: 100%;
+      height: 56px;
+
+      .total_block_coins_text_1 {
+        display: flex;
+        width: 100%;
+        position: relative;
+        $class_1: total_block_coins_text_1;
+        $class_2: total_block_coins_text_2;
+        $class_3: total_block_coins_text_3;
+        $class_4: total_block_coins_text_4;
+
+        @each $class_text, $position_px_left, $top, $position in ($class_1, 10px, 0px, absolute), ($class_2, 10px, 25px, absolute) {
+          .#{$class_text} {
+            position: #{$position};
+            left: #{$position_px_left};
+            top: #{$top};
+            &::after{
+              content:':';
+              position: #{position};
+              margin:0 0 0 2px;
+
+            }
+          }
+        }
+
+        @each $class_text, $position_px_right, $top, $position in ($class_3, 10px, 0px, absolute), ($class_4, 10px, 25px, absolute) {
+          .#{$class_text} {
+            position: #{$position};
+            top: #{$top};
+            right: #{$position_px_right};
+          }
+        }
+      }
+    }
+  }
+
+  .check_block_2 {
+    width: 160px;
+    height: 436px;
+    margin-left: 2%;
+    .text_check_block_2 {
+      font-size: 20px;
+    }
+
+    .conteiner_check_block_2 {
+      display: flex;
+      width: 100%;
+      height: 480px;
+      margin: 0 0 -60px 0;
+      padding: 0;
+      @each $class_text, $margin_px in (conteiner_1_check_2, 4px), (container_2_check_2, 4px) {
+        .#{$class_text} {
+          width: 50%;
+          height: 403px;
+          margin: 0;
+          padding: 0;
+
+          ul {
+            @if $class_text ==  conteiner_1_check_2 {
+              margin: 0 #{$margin_px} 0 0;
+            } @else if $class_text == container_2_check_2 {
+              margin: 0 0 0 #{$margin_px};
+            }
+            padding: 0;
+            width: 100%;
+            height: 403px;
+            background: #C4C4C4;
+
+            li {
+              padding: 24px 0 0 0;
+              text-align: center;
+              list-style: none;
+              width: 100%;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .total_block_coins_2 {
+      margin: 0;
+      border: solid 1px $colorGrey;
+      font-size: 16px;
+      width: 100%;
+      height: 56px;
+
+      .total_block_coins_text_2 {
+        display: flex;
+        width: 100%;
+        position: relative;
+        $class_1: total_block_coins_text_1;
+        $class_2: total_block_coins_text_2;
+        $class_3: total_block_coins_text_3;
+        $class_4: total_block_coins_text_4;
+
+        @each $class_text, $position_px_left, $top, $position in ($class_1, 10px, 0px, absolute), ($class_2, 10px, 25px, absolute) {
+          .#{$class_text} {
+            position: #{$position};
+            left: #{$position_px_left};
+            top: #{$top};
+            &::after{
+              content:':';
+              position: #{position};
+              margin:0 0 0 2px;
+
+            }
+          }
+        }
+
+        @each $class_text, $position_px_right, $top, $position in ($class_3, 10px, 0px, absolute), ($class_4, 10px, 25px, absolute) {
+          .#{$class_text} {
+            position: #{$position};
+            top: #{$top};
+            right: #{$position_px_right};
+          }
+        }
+      }
+    }
+  }
+
+  .check_block_3 {
+    width: 304px;
+    height:509px;
+    margin-left:2%;
+    //border:solid 2px red;
+    .check_data_block_1 {
+      width:100%;
+      height:56px;
+      margin:0 0 0 0;
+      border: solid 3px grey;
+      font-size:16px;
+      div{
+        position:relative;
+        .check_data_block_2_text_1{
+          position:absolute;
+          left:10px;
+          top:15px;
+          &::after{
+            content:':';
+            margin:0 0 0 2px;
+
+          }
+        }
+        .check_data_block_2_text_2{
+          position:absolute;
+          right:10px;
+          top:15px;
+        }
+      }
+    }
+
+    .check_data_block_2 {
+      width:100%;
+      height:124px;
+      margin:44px 0 0 0;
+      border: solid 2px grey;
+      font-size:16px;
+      div{
+        position: relative;
+        font-size:16px;
+        @each $class_text, $position_px_left, $top, $position,$test in (check_data_block_2_text_2, 10px, 20px, absolute),
+        (check_data_block_2_text_3, 10px, 65px, absolute,15px) {
+          .#{$class_text} {
+            position: #{$position};
+            left: #{$position_px_left};
+            top: #{$top};
+            line-height: #{$test};
+          }
+        }
+        @each $class_text, $position_px_left, $top, $position in (check_data_block_2_text_5, 10px, 20px, absolute),
+        (check_data_block_2_text_6, 10px, 65px, absolute) {
+          .#{$class_text} {
+            position: #{$position};
+            right: #{$position_px_left};
+            top: #{$top};
+          }
+        }
+      }
+    }
+
+    .check_data_block_3 {
+      width:100%;
+      height: 136px;
+      margin:44px 0 0 0;
+      border: solid 2px grey;
+      font-size:16px;
+      div{
+        position:relative;
+        font-size:16px;
+        @each $class_text, $position_px_left, $top, $position in (check_data_block_2_text_1, 10px, 12px, absolute),
+                (check_data_block_2_text_2, 10px, 42px, absolute),(check_data_block_2_text_3, 10px, 72px, absolute),
+                (check_data_block_2_text_4, 10px, 102px, absolute) {
+          .#{$class_text} {
+            position: #{$position};
+            left: #{$position_px_left};
+            top: #{$top};
+          }
+        }
+
+        @each $class_text, $position_px_left, $top, $position in (check_data_block_2_text_5, 10px, 12px, absolute),
+                (check_data_block_2_text_6, 10px, 42px, absolute),(check_data_block_2_text_7, 10px, 72px, absolute),
+                (check_data_block_2_text_8, 10px, 102px, absolute) {
+          .#{$class_text} {
+            position: #{$position};
+            right: #{$position_px_left};
+            top: #{$top};
+          }
+        }
+      }
+    }
+
+    .check_data_block_4 {
+      width:100%;
+      height:51px;
+      margin:38px 0 0 0;
+      border: solid 2px grey;
+      font-size:16px;
+      div{
+        position: relative;
+        font-size:16px;
+        .check_data_block_2_text_1{
+          position:absolute;
+          left:10px;
+          top:10px;
+        }
+        .check_data_block_2_text_2{
+          position:absolute;
+          right:10px;
+          top:10px;
+        }
+      }
+    }
+  }
+
+  .check_collection_end_button{
+    width:400px;
+    height:110px;
+    border:solid 1px $color_st_Blackblue;
+    background-color: $color_st_Blackblue;
+    color:$colorWhite;
+    border-radius:5px;
+    position: absolute;
+    bottom:10%;
+    left:32%;
+  }
+}

@@ -1,0 +1,140 @@
+$colorBlack: #02003f;
+$colorGrey: #777;
+$colorGreyWhite: #ddd;
+
+$colorWhite: #fff;
+$colorYellow: #ff0;
+
+$colorRed: #d00;
+
+$color_st_grey: #e9e9e9;
+$color_st_Blackblue: #2e2e69;
+
+$colorService: #363645;
+
+$colorBack: #303368;
+$colorNext: #8baa32;
+
+$colorMainBack: #63a7dd;
+
+$mainWidth: 1280px;
+$mainHeight: 1024px;
+
+@import "fonts";
+
+* {
+  color: inherit;
+  font: inherit;
+  max-height: $mainHeight;
+  max-width: $mainWidth;
+  outline: none;
+
+  &::selection {
+    background: transparent;
+  }
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &,
+  &:hover {
+    //cursor: none;
+  }
+}
+
+html {
+  background: #300;
+}
+
+body {
+  background: #fff;
+  color: $colorBlack;
+  font: 400 24px/30px RR, serif;
+  height: $mainHeight;
+  margin: 0;
+  position: relative;
+  touch-action: none;
+  width: $mainWidth;
+
+  &.main {
+    background: #eee;
+  }
+}
+
+#firstPage {
+  align-items: center;
+  background: #fff url('/img/logo2.png') no-repeat center/200px;
+  color: $colorGrey;
+  display: flex;
+  font: 400 50px/50px RR, serif;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  z-index: 1000;
+}
+
+@import "mainPage";
+@import "loginPage";
+@import "errorPage";
+@import "infoPage";
+@import "collectionPage";
+
+@import "login_keyboard";
+@import "header";
+@import "languages";
+@import "callCenter";
+@import "timeDate";
+
+@import "categories";
+
+@import "services";
+
+@import "pagination";
+
+@import "service";
+
+@import "confirm";
+
+@import "payment";
+
+@import "check";
+@import "print";
+
+@import "inputs";
+@import 'buttons';
+
+@import "keyboards";
+@import "loadingPage";
+@import "messageBox";
+
+@import "footer";
+
+@import "symbols";
+
+@import "helpers";
+
+@import "search";
+
+@import "keyboard_search";
+
+@import "sliders";
+
+@import "media";
+@import "check_collection";
+@import "Key_a";
+@import "seting";
+@import "seting_info";
+@import "about_termianl_info";
+@import "collection_info";
+@import "collection";
+@import "Error";
+@import "block_pro";
+@import "LoadingPage";
+@import "LimitSummAmount";
+@import "Casete";
+@import "ChexBoxStatus";
+
+

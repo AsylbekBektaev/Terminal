@@ -1,0 +1,7 @@
+.symbols {
+  font: 400 24px/24px FA, serif;
+
+  &.tenge::after {
+    content: '\f7d7';
+  }
+}

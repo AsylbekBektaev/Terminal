@@ -1,0 +1,21 @@
+<link href="/css/main.css" rel="stylesheet" type="text/css">
+<div id="firstPage" data-lang="loading"></div>
+<script type="text/javascript">
+    let config = require('./config.example.json');
+
+    let TIME = 10;
+
+    if (process.env.LOCAL_ENV) {
+        TIME = 1;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const gui = require('nw.gui');
+        this.win = gui.Window.get();
+        this.win.enterFullscreen();
+
+        setTimeout(() => {
+            window.location = config.startIndex;
+        }, TIME * 1000);
+    });
+</script>

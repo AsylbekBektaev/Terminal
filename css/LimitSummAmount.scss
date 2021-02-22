@@ -1,0 +1,231 @@
+.infoBlock {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 330px;
+	top: 250px;
+	z-index: 910;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+.textPlaceholder {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font: 600 56px/65px RR,serif;
+	padding: 20px 0 20px 0;
+	z-index: 900;
+	position: absolute;
+	top: 220px;
+	color: rgba(0, 29, 82, 0.7);
+}
+.LimitSection {
+	width: 100%;
+	height: 864px;
+	background: #414042;
+	.infoLim{
+		display:none;
+		width:257px;
+		height:77px;
+		font:400 18px/21px RR,serif;
+		z-index:99000;
+		position:absolute;
+		right:55px;
+		top:285px;
+		background: #FFFFFF;
+		border: 1px solid #5E5E5E;
+		box-sizing: border-box;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 5px;
+		label{
+			word-wrap: break-word;
+			width:100%;
+			height:100%;
+		}
+	}
+}
+.infoBlocks{
+	width:100%;
+	height:84.5%;
+	//display:none;
+	z-index:99000;
+	position:absolute;
+	top:160px;
+	background: rgba(0, 0, 0, 0.56);
+	//display:none;
+	.Enter_Sum{
+		width: 1042px;
+		height: 666px;
+		margin:80px auto 0 126px;
+		background: white;
+		border-radius: 20px;
+		position: absolute;
+		display:none;
+		img{
+			margin: 100px 0 -38px 411px;
+		}
+		label{
+			word-wrap: break-word;
+			width:100%;
+			display:block;
+			text-align: center;
+			font:400 64px/75px RR,serif;
+		}
+		.SumMin{
+			font: 500 24px/28px RR,serif;
+			margin: 40px 0 30px 0;
+			width:100%;
+			display: flex;
+			label{
+				font: 500 24px/28px RR,serif;
+				margin:0 0 0 -10px;
+			}
+			span{
+				margin: 0 0 0 -360px;
+			}
+		}
+		.SumMax{
+			font: 500 24px/28px RR,serif;
+			margin: 0 0 50px 0;
+			width:100%;
+			display: flex;
+			label{
+				font: 500 24px/28px RR,serif;
+				margin:0 0 0 -10px;
+			}
+			span{
+				margin: 0 0 0 -360px;
+			}
+		}
+		div{
+			width:100%;
+			height:148px;
+			position: absolute;
+			bottom:0;
+			border-bottom-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			background: rgba(237, 237, 237, 1);
+			border-top: solid 5px #969696;
+			box-shadow: inset 0 4px 4px #969696;
+			display:flex;
+			.BUT_next{
+				width: 190px;
+				height: 56px;
+				background: #59930F;
+				border: solid 1px #59930F;
+				border-radius: 5px;
+				margin:45px 0 0 419px;
+				color:white;
+			}
+		}
+	}
+	.CommissionInfo{
+		width: 1042px;
+		height: 666px;
+		margin:80px auto 0 126px;
+		background: white;
+		border-radius: 20px;
+		position: absolute;
+		display:none;
+		label{
+			display: block;
+			width:100%;
+			margin:35px auto;
+			text-align: center;
+			font:400 64px/75px RR,serif;
+		}
+		textarea{
+			font:400 36px/42px RR,serif;
+			overflow: visible auto;
+			resize: none;
+			width: 914px;
+			height: 340px;
+			background: #FFFFFF;
+			border: 1px solid #AAAAAA;
+			box-sizing: border-box;
+			border-radius: 10px;
+			margin:0 0 0 59px;
+		}
+
+		div{
+			width:100%;
+			height:148px;
+			position: absolute;
+			bottom:0;
+			border-bottom-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			background: rgba(237, 237, 237, 1);
+			border-top: solid 5px #969696;
+			box-shadow: inset 0 4px 4px #969696;
+			display:flex;
+			.BUT_com{
+				width: 190px;
+				height: 56px;
+				background: #59930F;
+				border: solid 1px #59930F;
+				border-radius: 5px;
+				margin:45px 0 0 419px;
+				color:white;
+			}
+		}
+	}
+	.ErLim{
+		width: 856px;
+		height: 223px;
+		margin:200px auto 0 212px;
+		background: white;
+		border-radius: 20px;
+		position: absolute;
+		display:none;
+		img{
+			width:131px;
+			height:131px;
+			position: absolute;
+			top:45px;
+			left:57px;
+		}
+		div{
+			width:75%;
+			height:100%;
+			position: absolute;
+			right:0;
+			border-top-right-radius:20px;
+			border-bottom-right-radius:20px;
+			display:flex;
+			flex-direction: column;
+			.text1{
+				width:100%;
+				text-align: center;
+				margin:55px 0 0 0;
+			}
+			.text2{
+				width:100%;
+				text-align: center;
+				margin:55px 0 0 0;
+			}
+			button{
+				width: 189px;
+				height: 56px;
+				background: #2E2E69;
+				border:solid 1px #2E2E69;
+				border-radius: 10px;
+				color:white;
+				margin:36px 0 0 225px;
+			}
+		}
+
+	}
+}
+
+.numbInput {
+	min-width: 587px;
+	border-radius: 20px;
+	display: inline-block;
+	height: 90px;
+	padding: 30px 30px 10px 40px;
+	text-align: left;
+	font: 400 50px/50px RR, serif;
+	margin: 45px 0 0 310px;
+}

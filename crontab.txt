@@ -1,0 +1,4 @@
+	* * * * * echo 3 > /proc/sys/vm/drop_caches
+ 	* * * * *   rm   -rf   /home/indigo24/.config/indigo24-frontend/BrowserMetrics/*
+ 	* * * * * cd /var/www/indigo24.terminal/schedule && php terminalStatus.php
+ 	* * * * * export DISPLAY=:0;xset -dpms

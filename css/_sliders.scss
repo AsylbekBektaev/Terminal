@@ -1,0 +1,17 @@
+body.sliders {
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

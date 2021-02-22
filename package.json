@@ -1,0 +1,18 @@
+{
+  "name": "indigo24-frontend",
+  "main": "index.html",
+  "version": "2.0.0",
+  "description": "Indigo24 Terminal v2.0",
+  "scripts": {
+    "main": "scss --style=compressed --no-source-map css/main.scss:css/main.css"
+  },
+  "keywords": [
+    "indigo24",
+    "terminal"
+  ],
+  "permissions": [
+    "browsingData"
+  ],
+  "author": "AibekQ",
+  "license": "ISC"
+}

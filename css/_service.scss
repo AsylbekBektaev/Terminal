@@ -1,0 +1,38 @@
+.serviceInfo {
+  left: 40px;
+  position: absolute;
+  text-align: left;
+  top: 40px;
+  vertical-align: top;
+
+  img {
+    height: 80px;
+    margin-right: 20px;
+    width: 80px;
+  }
+
+  .pay {
+    display: inline-block;
+    font: 400 20px/20px RR, serif;
+    margin-top: 15px;
+  }
+
+  .caption {
+    font: 400 20px/20px RR, serif;
+    height: 0;
+    padding: 10px 0 0;
+    width: 500px;
+  }
+}
+
+.body {
+  &.service {
+    background: $colorService;
+    height: 864px;
+  }
+}
+#timeDate {
+  margin: 29px 0 0 0;
+  padding: 0 0 0 0;
+}
+

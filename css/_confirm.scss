@@ -1,0 +1,40 @@
+#confirm {
+  background: #414042;
+  box-sizing: border-box;
+  color: $colorWhite;
+  height: 864px;
+  padding-top: 50px;
+  text-align: center;
+
+  .icon_confirm {
+    color: #ff0;
+    display: block;
+    width:150px;
+    height:150px;
+    margin:100px 0  10px  38.5%;
+    background-color: #414042;
+    &::after{
+      content: url("/img/Component.png");
+      color: #ff0;
+      display: block;
+      width:150px;
+      height:150px;
+      margin:100px 0  10px  40%;
+      background-color: #414042;
+    }
+  }
+
+  h1, h2, h3, p {
+    margin: 0;
+  }
+
+
+  .text {
+    font: 400 30px/30px RR, serif;
+    margin-bottom: 30px;
+  }
+
+  .account {
+    font: 400 100px/100px RR, serif;
+  }
+}

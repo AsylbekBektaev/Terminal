@@ -1,0 +1,129 @@
+.Error {
+
+  .Error_border {
+    width: 1218px;
+    height: 841px;
+    margin: 28px 28px 28px 28px;
+    border: solid 5px #1B0E3A;
+    flex-direction: column;
+    .Error_x{
+     width: 281px;
+      height: 281px;
+      position: absolute;
+      left: 40%;
+      right: 0%;
+      top: 20%;
+      bottom: 0%;
+      border-radius:100%;
+      background: #1B0E3A;
+      .Error_x1{
+        width:183px;
+        height:30px;
+        margin:45% 0 0  19%;
+        background-color:white;
+        transform: rotate(-45deg);
+
+      }
+      .Error_x2{
+        width:183px;
+        height:30px;
+        margin:-10% 0 0 19%;
+        background-color:white;
+        transform: rotate(45deg);
+      }
+
+    }
+    .Error_Text1{
+      width:80%;
+      height:75px;
+      position: absolute;
+      top:50%;
+      left:12%;
+      font-size:64px;
+      line-height:75px;
+    }
+    .Error_Text2{
+      width:50%;
+      height:27px;
+      position: absolute;
+      top:60%;
+      left:30%;
+      font-size:23px;
+
+      line-height:26.95px;
+    }
+    .Next_terminals{
+    width: 308px;
+      height: 60px;
+      border-radius: 5px;
+      border:solid 1px  #2E2E69;
+      position: absolute;
+      top:65%;
+      left:38%;
+      color:white;
+      background-color:#2E2E69;
+    }
+    .Error_Text3{
+      width:45%;
+      height:27px;
+      position: absolute;
+      top:73%;
+      left:33.5%;
+      font-size:23px;
+      line-height:26.95px;
+    }
+
+    .Error_Text4{
+      width:45%;
+      height:42px;
+      position: absolute;
+      top:79%;
+      left:38%;
+      font-size:36px;
+      line-height:42.19px;
+    }
+  }
+
+  .Terminal_block_adr{
+    z-index: 1000;
+    display:none;
+    width:100%;
+    height:100%;
+    .Terminal_block_Text1{
+      width: 100%;
+      height:75px;
+      text-align: center;
+      position: absolute;
+      top:20%;
+      left:0;
+      font-size: 64px;
+      line-height:75px;
+      font-weight: 700;
+    }
+    .Terminal_adress{
+      position: absolute;
+      top:30%;
+      left:5%;
+      .adress_text{
+        font-size:36px;
+        line-height:42.19px;
+        font-weight: 400;
+        margin:48px 0  0 0;
+      }
+    }
+    .Terminal_block_button{
+      width:190px;
+      height:56px;
+      position: absolute;
+      top:83%;
+      left:43%;
+      border-radius: 5px;
+      border:solid 1px #2E2E69;
+      background-color: #2E2E69;
+      color:white;
+      font-size:20px;
+      line-height:23.44px;
+    }
+  }
+
+}

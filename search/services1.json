@@ -1,0 +1,32 @@
+{
+  "0": {
+    "service_name": "Activ",
+    "service_logo": "logosV2/activ.png",
+    "service_src": "/activ/"
+  },
+  "2": {
+    "service_name": "Beeline",
+    "service_logo": "logosV2/beeline.png",
+    "service_src": "/beeline/"
+  },
+  "3": {
+    "service_name": "Altel 4G",
+    "service_logo": "logosV2/altel4g.png",
+    "service_src": "/altel4g/"
+  },
+  "4": {
+    "service_name": "Dalacom",
+    "service_logo": "logosV2/dalacom.gif",
+    "service_src": "/dalacom_pathword/"
+  },
+  "5": {
+    "service_name": "Kcell",
+    "service_logo": "logosV2/kcell.png",
+    "service_src": "/kcell/"
+  },
+  "6": {
+    "service_name": "Tele 2",
+    "service_logo": "logosV2/tele2.png",
+    "service_src": "/tele2/"
+  }
+}

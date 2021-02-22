@@ -1,0 +1,29 @@
+body.error {
+  text-align: center;
+
+  .logo {
+    padding-top: 60px;
+  }
+
+  .main_text {
+    color: #363645;
+    font-size: 70px;
+    line-height: 1;
+    margin-top: 180px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 85px;
+    margin-right: 85px;
+    border: 10px dashed red;
+  }
+
+  .server_does_not_work {
+    font-size: 35px;
+    margin: 0 222px;
+  }
+
+  .support_number {
+    font-weight: bold;
+    font-size: 25px;
+  }
+}

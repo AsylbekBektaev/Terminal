@@ -1,0 +1,24 @@
+.timeDate {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .date {
+    font: 400 20px/30px RR, serif;
+    text-align: left;
+  }
+
+  .timeWeekday {
+    font: 400 20px/30px RR, serif;
+    margin-left: 30px;
+    text-align: right;
+  }
+}

@@ -1,0 +1,41 @@
+.fs0 {
+  font: 100 0/0 serif;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.color {
+  &.red {
+    color: $colorRed;
+  }
+
+  &.grey {
+    color: $colorGrey;
+  }
+
+  &.greyWhite {
+    color: $colorGreyWhite;
+  }
+
+  &.yellow {
+    color: $colorYellow;
+  }
+}
+
+.b {
+  font-weight: 900;
+}
+
+.tac {
+  text-align: center;
+}
+
+.hide {
+  display: none !important;
+}

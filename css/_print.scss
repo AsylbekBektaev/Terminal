@@ -1,0 +1,30 @@
+#print {
+  background: $colorService;
+  box-sizing: border-box;
+  color: $colorWhite;
+  height: 864px;
+  padding: 30px 200px 0;
+  text-align: center;
+
+  .text {
+    color: #fff;
+    font: 100 100px/100px RR, serif;
+    margin-top: 66px;
+  }
+
+  .button {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &.back {
+      background: $colorGrey;
+    }
+
+    &.print {
+      font: 400 80px/60px RR, serif;
+      padding: 50px 100px;
+      width: 400px;
+    }
+  }
+}

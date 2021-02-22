@@ -1,0 +1,64 @@
+$sizeButton: 100px;
+
+#pagination {
+  margin: 0;
+  padding: 10px 40px;
+  text-align: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  button {
+    background: transparent;
+    border: 0;
+    height: $sizeButton;
+    padding: 0;
+    width: $sizeButton;
+  }
+
+  .dots {
+    padding: 35px 20px;
+  }
+
+  .back,
+  .next {
+    color: $colorNext;
+    font: 400 75px/75px FA, serif;
+
+    &.disable {
+      color: $colorGreyWhite;
+    }
+  }
+
+  .back::after {
+    content: '\f137';
+  }
+
+  .next::after {
+    content: '\f138';
+  }
+}
+
+.dots {
+  li {
+    background: $colorNext;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+    &.active {
+      background: $colorBlack;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

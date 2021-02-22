@@ -1,0 +1,21 @@
+#seting_info {
+  flex-direction: column;
+  padding: 300px 0 0 300px;
+  img {
+    width: 220px;
+    height: 220px;
+    margin: 0 0 80px 245px;
+  }
+  div {
+    display: flex;
+  }
+}
+.seting_info_button {
+  width: 310px;
+  height: 84px;
+  background-color: #2e2e69;
+  color: white;
+  border: solid 1px #2e2e69;
+  border-radius: 5px;
+  margin: 30px 0 30px 20%;
+}

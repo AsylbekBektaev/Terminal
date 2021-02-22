@@ -1,0 +1,42 @@
+header {
+  background: #fff url('/img/logo.png') no-repeat left 20px center/250px;
+  height: 110px;
+  padding-left: 300px;
+  position: relative;
+
+  &.service {
+    padding: 0;
+    height: 160px;
+    background-image: none;
+    .language_2{
+      display: inline-block;
+      list-style: none;
+      padding: 40px 0 0; 
+      margin:20px 0 0 59%;
+      a{
+        background: #eee;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 10px; 
+        margin:5px;
+    }
+    li{
+      display: inline-block; 
+    }
+    li::not{
+      margin-right: 5px;
+    }
+    img{
+      width: 50px; 
+    }
+    }
+  }
+
+
+.indigo24Terminal {
+  font: 900 20px/20px RR, serif;
+  left: 150px;
+  position: absolute;
+  top: 70px;
+}
+}
